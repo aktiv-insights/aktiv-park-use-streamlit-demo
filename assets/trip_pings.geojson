@@ -1,0 +1,277 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.300189,
+          40.130996
+        ]
+      },
+      "properties": {
+        "ad_id": "user_001",
+        "visited_park": true,
+        "park_name": "Heil Valley Ranch",
+        "utc_timestamp": "2025-05-09T04:13:28Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.300189,
+          40.130996
+        ]
+      },
+      "properties": {
+        "ad_id": "user_001",
+        "visited_park": true,
+        "park_name": "Heil Valley Ranch",
+        "utc_timestamp": "2025-05-02T05:19:21Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.300188,
+          40.130996
+        ]
+      },
+      "properties": {
+        "ad_id": "user_001",
+        "visited_park": true,
+        "park_name": "Heil Valley Ranch",
+        "utc_timestamp": "2025-05-04T22:56:46Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.30019,
+          40.130995
+        ]
+      },
+      "properties": {
+        "ad_id": "user_002",
+        "visited_park": true,
+        "park_name": "Heil Valley Ranch",
+        "utc_timestamp": "2025-05-14T05:56:37Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.30019,
+          40.130993
+        ]
+      },
+      "properties": {
+        "ad_id": "user_002",
+        "visited_park": true,
+        "park_name": "Heil Valley Ranch",
+        "utc_timestamp": "2025-05-19T20:57:51Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.300189,
+          40.130995
+        ]
+      },
+      "properties": {
+        "ad_id": "user_002",
+        "visited_park": true,
+        "park_name": "Heil Valley Ranch",
+        "utc_timestamp": "2025-05-09T07:18:25Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.300189,
+          40.130996
+        ]
+      },
+      "properties": {
+        "ad_id": "user_003",
+        "visited_park": true,
+        "park_name": "Heil Valley Ranch",
+        "utc_timestamp": "2025-05-10T04:57:59Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.30019,
+          40.130995
+        ]
+      },
+      "properties": {
+        "ad_id": "user_003",
+        "visited_park": true,
+        "park_name": "Heil Valley Ranch",
+        "utc_timestamp": "2025-05-19T21:43:40Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.300189,
+          40.130996
+        ]
+      },
+      "properties": {
+        "ad_id": "user_003",
+        "visited_park": true,
+        "park_name": "Heil Valley Ranch",
+        "utc_timestamp": "2025-05-01T01:12:33Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.191495,
+          40.045628
+        ]
+      },
+      "properties": {
+        "ad_id": "user_004",
+        "visited_park": true,
+        "park_name": "Walden Ponds",
+        "utc_timestamp": "2025-05-26T11:00:57Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.180428,
+          40.047034
+        ]
+      },
+      "properties": {
+        "ad_id": "user_004",
+        "visited_park": true,
+        "park_name": "Walden Ponds",
+        "utc_timestamp": "2025-05-20T10:57:18Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.192194,
+          40.046199
+        ]
+      },
+      "properties": {
+        "ad_id": "user_004",
+        "visited_park": true,
+        "park_name": "Walden Ponds",
+        "utc_timestamp": "2025-05-15T14:28:51Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.189309,
+          40.045518
+        ]
+      },
+      "properties": {
+        "ad_id": "user_004",
+        "visited_park": true,
+        "park_name": "Walden Ponds",
+        "utc_timestamp": "2025-05-18T09:33:12Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.338711,
+          40.005822
+        ]
+      },
+      "properties": {
+        "ad_id": "user_005",
+        "visited_park": true,
+        "park_name": "Betasso Preserve",
+        "utc_timestamp": "2025-05-10T17:57:33Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.338269,
+          40.00547
+        ]
+      },
+      "properties": {
+        "ad_id": "user_005",
+        "visited_park": true,
+        "park_name": "Betasso Preserve",
+        "utc_timestamp": "2025-05-20T06:15:33Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.337377,
+          40.004061
+        ]
+      },
+      "properties": {
+        "ad_id": "user_005",
+        "visited_park": true,
+        "park_name": "Betasso Preserve",
+        "utc_timestamp": "2025-05-14T23:26:48Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.337647,
+          40.004958
+        ]
+      },
+      "properties": {
+        "ad_id": "user_005",
+        "visited_park": true,
+        "park_name": "Betasso Preserve",
+        "utc_timestamp": "2025-05-17T06:26:23Z"
+      }
+    }
+  ]
+}

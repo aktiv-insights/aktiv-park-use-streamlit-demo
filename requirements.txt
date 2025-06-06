@@ -1,0 +1,12 @@
+# Core
+streamlit
+pandas
+geopandas
+shapely
+geojson
+
+# Map visualization
+pydeck
+
+# App
+streamlit

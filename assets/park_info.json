@@ -1,0 +1,178 @@
+{
+    "db5d64d2-4032-4796-84fb-c1ac8d54e630": {
+        "ParkName": "Walden Ponds Wildlife Habitat",
+        "Acreage": 100,
+        "Contact": "https://www.bouldercounty.org/open-space/parks-and-trails/walden-ponds-wildlife-habitat/",
+        "Trails": [{
+            "TrailName": "Walden Ponds Trails",
+            "TrailRating": "Easy",
+            "MilesTrail": 2.9}],
+        "AllowsDogs": "Leashed",
+        "Activities": ["hiking", "biking", "horseback riding"],
+        "Restrooms": true, 
+        "ADA_Access": true,
+        "ADAParking": true, 
+        "ParkingLots": true, 
+        "NumParkingSpots": 52, 
+        "PicnicTables": true,
+        "Shelter": true,
+        "OvernightCamping": false
+    },
+     "56b4f7f3-1b68-442d-b26b-cc5f6b5593c7": {
+        "ParkName": "Caribou Ranch",
+        "Acreage": 2151,
+        "Contact": "https://www.bouldercounty.org/open-space/parks-and-trails/caribou-ranch/",
+        "Trails": [
+            {
+            "TrailName": "Blue Bird Loop",
+            "TrailRating": "Moderate",
+            "MilesTrail": 1.8},
+            {
+            "TrailName": "DeLonde Trail",
+            "TrailRating": "Easy",
+            "MilesTrail": 1.2}
+        ],
+        "AllowsDogs": "No",
+        "Activities": ["hiking", "horseback riding", "fishing"],
+        "Restrooms": true, 
+        "ADA_Access": true,
+        "ADAParking": true, 
+        "ParkingLots": true, 
+        "NumParkingSpots": 25, 
+        "PicnicTables": true,
+        "Shelter": false,
+        "OvernightCamping": false
+    },
+    "ba45a719-137c-4c04-9bb3-0ef91c0608aa": {
+        "ParkName": "Betasso Preserve",
+        "Acreage": 1151,
+        "Contact": "https://www.bouldercounty.org/open-space/parks-and-trails/betasso-preserve/",
+        "Trails": [
+            {
+            "TrailName": "Betasso Link",
+            "TrailRating": "Difficult",
+            "MilesTrail": 1.3},
+            {
+            "TrailName": "Canyon Loop",
+            "TrailRating": "Moderate/Difficult",
+            "MilesTrail": 3.3},
+            {
+            "TrailName": "Loop Link",
+            "TrailRating": "Moderate",
+            "MilesTrail": 0.8},
+            {
+            "TrailName": "Benjamin Loop",
+            "TrailRating": "Moderate",
+            "MilesTrail": 2.4},
+            {
+            "TrailName": "Fourmile Link",
+            "TrailRating": "Moderate",
+            "MilesTrail": 0.8},
+            {
+            "TrailName": "Blanchard Trail",
+            "TrailRating": "Moderate",
+            "MilesTrail": 0.3},
+            {
+            "TrailName": "Bummer's Rock Trail",
+            "TrailRating": "Moderate",
+            "MilesTrail": 0.3}
+        ],
+        "AllowsDogs": "Leashed",
+        "Activities": ["hiking", "biking,", "horseback riding"],
+        "Restrooms": true, 
+        "ADA_Access": true,
+        "ADAParking": true, 
+        "ParkingLots": true, 
+        "NumParkingSpots": 44, 
+        "PicnicTables": true,
+        "Shelter": true,
+        "OvernightCamping": false
+    },
+    "0eec7b46-3253-412c-8ec6-9292b01528fa": {
+        "ParkName": "Heil Valley Ranch",
+        "Acreage": 6231,
+        "Contact": "https://www.bouldercounty.org/open-space/parks-and-trails/heil-valley-ranch/",
+        "Trails": [
+            {
+            "TrailName": "Grindstone Quarry Trail",
+            "TrailRating": "Easy",
+            "MilesTrail": 1.4},
+            {
+            "TrailName": "Lichen Loop",
+            "TrailRating": "Easy",
+            "MilesTrail": 1.3},
+            {
+            "TrailName": "Overland Loop",
+            "TrailRating": "Moderate",
+            "MilesTrail": 2.3},
+            {
+            "TrailName": "Picture Rock Trail",
+            "TrailRating": "Moderate",
+            "MilesTrail": 5.2},
+            {
+            "TrailName": "Ponderosa Loop",
+            "TrailRating": "Moderate",
+            "MilesTrail": 2.6},
+            {
+            "TrailName": "Schoolhouse Loop",
+            "TrailRating": "Easy",
+            "MilesTrail": 0.9},
+            {
+            "TrailName": "Wapiti Trail",
+            "TrailRating": "Moderate",
+            "MilesTrail": 2.5},
+            {
+            "TrailName": "Wild Turkey Trail",
+            "TrailRating": "Moderate",
+            "MilesTrail": 2.9}
+        ],
+        "AllowsDogs": "No",
+        "Activities": ["hiking", "biking,", "horseback riding"],
+        "Restrooms": true, 
+        "ADA_Access": true,
+        "ADAParking": true, 
+        "ParkingLots": true, 
+        "NumParkingSpots": 115, 
+        "PicnicTables": true,
+        "Shelter": true,
+        "OvernightCamping": false
+    },
+    "c26f24db-0092-4566-a440-caeee46e1ab7": {
+        "ParkName": "Hall Ranch",
+        "Acreage": 6231,
+        "Contact": "https://www.bouldercounty.org/open-space/parks-and-trails/hall-ranch/",
+        "Trails": [
+            {
+            "TrailName": "Bitterbrush  Trail",
+            "TrailRating": "Difficult",
+            "MilesTrail": 3.7},
+            {
+            "TrailName": "Nighthawk Trail",
+            "TrailRating": "Moderate/Difficult",
+            "MilesTrail": 4.7},
+            {
+            "TrailName": "Nelson Loop",
+            "TrailRating": "Moderate/Difficult",
+            "MilesTrail": 2.2},
+            {
+            "TrailName": "Antelope Trail",
+            "TrailRating": "Moderate",
+            "MilesTrail": 1.0},
+            {
+            "TrailName": "Button Rock Trail",
+            "TrailRating": "Moderate",
+            "MilesTrail": 2.0}
+        ],
+        "AllowsDogs": "No",
+        "Activities": ["hiking", "biking,", "horseback riding"],
+        "Restrooms": true, 
+        "ADA_Access": true,
+        "ADAParking": true, 
+        "ParkingLots": true, 
+        "NumParkingSpots": 72, 
+        "PicnicTables": true,
+        "Shelter": true,
+        "OvernightCamping": false
+    }
+}
+ 

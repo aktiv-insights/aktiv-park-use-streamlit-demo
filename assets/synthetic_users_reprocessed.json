@@ -1,0 +1,1415 @@
+[
+  {
+    "ad_id": "user_001",
+    "home": {
+      "geohash_5": "09da7",
+      "zipcode": "80177",
+      "region": "Colorado",
+      "city": "Longmont"
+    },
+    "work": {
+      "geohash_5": "f66c0",
+      "zipcode": "80449",
+      "region": "Colorado",
+      "city": "Denver"
+    },
+    "trips": [
+      {
+        "start_time": "2025-05-10T08:56:38Z",
+        "end_time": "2025-05-14T05:08:29Z",
+        "velocity": 46.6,
+        "displacement": 8.8,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-03T16:03:11Z",
+        "end_time": "2025-05-10T01:44:43Z",
+        "velocity": 40.6,
+        "displacement": 10.3,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-14T03:24:02Z",
+        "end_time": "2025-05-25T18:42:41Z",
+        "velocity": 56.7,
+        "displacement": 19.0,
+        "visited_park": true,
+        "park_name": "Heil Valley Ranch",
+        "trip_pings": [
+          {
+            "utc_timestamp": "2025-05-09T04:13:28Z",
+            "latitude": 40.13099622488262,
+            "longitude": -105.30018912712627,
+            "velocity": 1.1
+          },
+          {
+            "utc_timestamp": "2025-05-02T05:19:21Z",
+            "latitude": 40.13099565099116,
+            "longitude": -105.30018926911974,
+            "velocity": 16.7
+          },
+          {
+            "utc_timestamp": "2025-05-04T22:56:46Z",
+            "latitude": 40.13099617414338,
+            "longitude": -105.30018831319983,
+            "velocity": 5.3
+          }
+        ]
+      },
+      {
+        "start_time": "2025-05-08T05:03:00Z",
+        "end_time": "2025-05-30T01:46:04Z",
+        "velocity": 40.3,
+        "displacement": 13.3,
+        "visited_park": false
+      }
+    ],
+    "movement_pings": [
+      {
+        "utc_timestamp": "2025-05-12T22:58:48Z",
+        "latitude": 39.158278,
+        "longitude": -105.173913
+      },
+      {
+        "utc_timestamp": "2025-05-03T00:48:25Z",
+        "latitude": 39.666071,
+        "longitude": -105.199766
+      },
+      {
+        "utc_timestamp": "2025-05-20T01:23:29Z",
+        "latitude": 39.140592,
+        "longitude": -104.816096
+      },
+      {
+        "utc_timestamp": "2025-05-24T16:12:40Z",
+        "latitude": 39.354086,
+        "longitude": -105.286589
+      },
+      {
+        "utc_timestamp": "2025-05-10T02:05:49Z",
+        "latitude": 39.053198,
+        "longitude": -105.292112
+      },
+      {
+        "utc_timestamp": "2025-05-27T06:25:56Z",
+        "latitude": 39.267713,
+        "longitude": -105.043123
+      },
+      {
+        "utc_timestamp": "2025-05-15T21:59:31Z",
+        "latitude": 39.42542,
+        "longitude": -105.150995
+      },
+      {
+        "utc_timestamp": "2025-05-17T01:37:30Z",
+        "latitude": 40.091631,
+        "longitude": -105.103393
+      },
+      {
+        "utc_timestamp": "2025-05-27T06:27:23Z",
+        "latitude": 39.378173,
+        "longitude": -104.953676
+      },
+      {
+        "utc_timestamp": "2025-05-04T08:02:19Z",
+        "latitude": 39.829115,
+        "longitude": -105.039012
+      },
+      {
+        "utc_timestamp": "2025-05-27T11:04:59Z",
+        "latitude": 39.689051,
+        "longitude": -104.954811
+      },
+      {
+        "utc_timestamp": "2025-05-05T17:14:55Z",
+        "latitude": 39.643838,
+        "longitude": -105.005723
+      },
+      {
+        "utc_timestamp": "2025-05-23T05:10:39Z",
+        "latitude": 38.922953,
+        "longitude": -105.160073
+      },
+      {
+        "utc_timestamp": "2025-05-23T14:31:31Z",
+        "latitude": 40.162303,
+        "longitude": -104.974086
+      },
+      {
+        "utc_timestamp": "2025-05-17T05:06:07Z",
+        "latitude": 39.465743,
+        "longitude": -104.905156
+      },
+      {
+        "utc_timestamp": "2025-05-16T18:46:42Z",
+        "latitude": 38.986399,
+        "longitude": -105.009399
+      },
+      {
+        "utc_timestamp": "2025-05-15T12:50:24Z",
+        "latitude": 39.887318,
+        "longitude": -105.014688
+      }
+    ],
+    "home_location": {
+      "latitude": 40.059729,
+      "longitude": -105.30115
+    }
+  },
+  {
+    "ad_id": "user_002",
+    "home": {
+      "geohash_5": "2554f",
+      "zipcode": "80558",
+      "region": "Colorado",
+      "city": "Longmont"
+    },
+    "work": {
+      "geohash_5": "de108",
+      "zipcode": "80646",
+      "region": "Colorado",
+      "city": "Colorado Springs"
+    },
+    "trips": [
+      {
+        "start_time": "2025-05-05T14:23:51Z",
+        "end_time": "2025-05-16T13:12:54Z",
+        "velocity": 22.6,
+        "displacement": 22.8,
+        "visited_park": true,
+        "park_name": "Heil Valley Ranch",
+        "trip_pings": [
+          {
+            "utc_timestamp": "2025-05-14T05:56:37Z",
+            "latitude": 40.130995421449995,
+            "longitude": -105.30018975859286,
+            "velocity": 1.0
+          },
+          {
+            "utc_timestamp": "2025-05-19T20:57:51Z",
+            "latitude": 40.13099342415652,
+            "longitude": -105.3001904000841,
+            "velocity": 9.5
+          },
+          {
+            "utc_timestamp": "2025-05-09T07:18:25Z",
+            "latitude": 40.130995392060065,
+            "longitude": -105.30018941493785,
+            "velocity": 15.4
+          }
+        ]
+      },
+      {
+        "start_time": "2025-05-02T20:12:56Z",
+        "end_time": "2025-05-14T20:07:42Z",
+        "velocity": 47.8,
+        "displacement": 13.0,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-09T15:08:36Z",
+        "end_time": "2025-05-21T15:33:37Z",
+        "velocity": 26.1,
+        "displacement": 14.2,
+        "visited_park": false
+      }
+    ],
+    "movement_pings": [
+      {
+        "utc_timestamp": "2025-05-24T08:31:06Z",
+        "latitude": 39.890957,
+        "longitude": -105.161902
+      },
+      {
+        "utc_timestamp": "2025-05-08T04:22:54Z",
+        "latitude": 39.895002,
+        "longitude": -105.016123
+      },
+      {
+        "utc_timestamp": "2025-05-10T14:27:50Z",
+        "latitude": 39.833862,
+        "longitude": -104.816473
+      },
+      {
+        "utc_timestamp": "2025-05-16T15:39:46Z",
+        "latitude": 39.527908,
+        "longitude": -104.887566
+      },
+      {
+        "utc_timestamp": "2025-05-28T03:35:18Z",
+        "latitude": 39.456011,
+        "longitude": -105.165788
+      },
+      {
+        "utc_timestamp": "2025-05-01T16:32:56Z",
+        "latitude": 39.116287,
+        "longitude": -105.146967
+      },
+      {
+        "utc_timestamp": "2025-05-05T23:27:58Z",
+        "latitude": 38.985562,
+        "longitude": -105.136622
+      },
+      {
+        "utc_timestamp": "2025-05-20T08:54:31Z",
+        "latitude": 38.937266,
+        "longitude": -105.224473
+      },
+      {
+        "utc_timestamp": "2025-05-15T05:18:31Z",
+        "latitude": 39.45802,
+        "longitude": -105.17641
+      },
+      {
+        "utc_timestamp": "2025-05-04T06:47:42Z",
+        "latitude": 39.967652,
+        "longitude": -105.095727
+      },
+      {
+        "utc_timestamp": "2025-05-11T23:12:55Z",
+        "latitude": 40.018949,
+        "longitude": -105.022883
+      },
+      {
+        "utc_timestamp": "2025-05-03T14:44:04Z",
+        "latitude": 39.108176,
+        "longitude": -105.081465
+      },
+      {
+        "utc_timestamp": "2025-05-03T19:41:05Z",
+        "latitude": 39.362942,
+        "longitude": -105.278872
+      },
+      {
+        "utc_timestamp": "2025-05-14T03:14:40Z",
+        "latitude": 39.499112,
+        "longitude": -105.28036
+      },
+      {
+        "utc_timestamp": "2025-05-16T18:12:58Z",
+        "latitude": 40.099148,
+        "longitude": -105.213762
+      },
+      {
+        "utc_timestamp": "2025-05-15T14:29:01Z",
+        "latitude": 39.641946,
+        "longitude": -104.904699
+      },
+      {
+        "utc_timestamp": "2025-05-07T11:46:30Z",
+        "latitude": 40.04853,
+        "longitude": -104.802183
+      }
+    ],
+    "home_location": {
+      "latitude": 40.065173,
+      "longitude": -105.134424
+    }
+  },
+  {
+    "ad_id": "user_003",
+    "home": {
+      "geohash_5": "36dd2",
+      "zipcode": "80648",
+      "region": "Colorado",
+      "city": "Longmont"
+    },
+    "work": {
+      "geohash_5": "b8aec",
+      "zipcode": "80316",
+      "region": "Colorado",
+      "city": "Denver"
+    },
+    "trips": [
+      {
+        "start_time": "2025-05-03T19:57:13Z",
+        "end_time": "2025-05-05T14:07:36Z",
+        "velocity": 50.5,
+        "displacement": 19.1,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-01T10:23:27Z",
+        "end_time": "2025-05-27T07:47:01Z",
+        "velocity": 41.7,
+        "displacement": 7.9,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-06T02:50:15Z",
+        "end_time": "2025-05-06T22:11:27Z",
+        "velocity": 27.1,
+        "displacement": 14.2,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-22T03:27:59Z",
+        "end_time": "2025-05-23T09:14:32Z",
+        "velocity": 50.8,
+        "displacement": 17.6,
+        "visited_park": true,
+        "park_name": "Heil Valley Ranch",
+        "trip_pings": [
+          {
+            "utc_timestamp": "2025-05-10T04:57:59Z",
+            "latitude": 40.13099551273129,
+            "longitude": -105.3001893787311,
+            "velocity": 13.9
+          },
+          {
+            "utc_timestamp": "2025-05-19T21:43:40Z",
+            "latitude": 40.13099458897451,
+            "longitude": -105.30019002011987,
+            "velocity": 24.0
+          },
+          {
+            "utc_timestamp": "2025-05-01T01:12:33Z",
+            "latitude": 40.130996044615436,
+            "longitude": -105.30018932586943,
+            "velocity": 17.8
+          }
+        ]
+      }
+    ],
+    "movement_pings": [
+      {
+        "utc_timestamp": "2025-05-26T07:51:00Z",
+        "latitude": 39.297325,
+        "longitude": -105.229082
+      },
+      {
+        "utc_timestamp": "2025-05-12T19:35:08Z",
+        "latitude": 39.071069,
+        "longitude": -105.152685
+      },
+      {
+        "utc_timestamp": "2025-05-21T15:04:36Z",
+        "latitude": 38.823314,
+        "longitude": -104.8206
+      },
+      {
+        "utc_timestamp": "2025-05-09T04:07:57Z",
+        "latitude": 39.046841,
+        "longitude": -104.951055
+      },
+      {
+        "utc_timestamp": "2025-05-04T18:32:22Z",
+        "latitude": 40.10754,
+        "longitude": -104.833595
+      },
+      {
+        "utc_timestamp": "2025-05-12T14:16:12Z",
+        "latitude": 39.174798,
+        "longitude": -104.849273
+      },
+      {
+        "utc_timestamp": "2025-05-02T22:59:56Z",
+        "latitude": 39.556444,
+        "longitude": -104.831515
+      },
+      {
+        "utc_timestamp": "2025-05-26T10:14:28Z",
+        "latitude": 39.611117,
+        "longitude": -105.120917
+      },
+      {
+        "utc_timestamp": "2025-05-21T02:03:21Z",
+        "latitude": 39.63965,
+        "longitude": -104.874785
+      },
+      {
+        "utc_timestamp": "2025-05-05T23:06:33Z",
+        "latitude": 39.646833,
+        "longitude": -104.855348
+      },
+      {
+        "utc_timestamp": "2025-05-20T06:46:44Z",
+        "latitude": 38.963045,
+        "longitude": -105.231537
+      }
+    ],
+    "home_location": {
+      "latitude": 40.087933,
+      "longitude": -105.300749
+    }
+  },
+  {
+    "ad_id": "user_004",
+    "home": {
+      "geohash_5": "8b4d3",
+      "zipcode": "80831",
+      "region": "Colorado",
+      "city": "Brighton"
+    },
+    "work": {
+      "geohash_5": "35e7a",
+      "zipcode": "80894",
+      "region": "Colorado",
+      "city": "Colorado Springs"
+    },
+    "trips": [
+      {
+        "start_time": "2025-05-13T06:54:06Z",
+        "end_time": "2025-05-22T10:08:31Z",
+        "velocity": 51.6,
+        "displacement": 28.3,
+        "visited_park": true,
+        "park_name": "Walden Ponds",
+        "trip_pings": [
+          {
+            "utc_timestamp": "2025-05-26T11:00:57Z",
+            "latitude": 40.04562827090129,
+            "longitude": -105.19149451409757,
+            "velocity": 23.1
+          },
+          {
+            "utc_timestamp": "2025-05-20T10:57:18Z",
+            "latitude": 40.04703428690883,
+            "longitude": -105.18042832178655,
+            "velocity": 13.1
+          }
+        ]
+      },
+      {
+        "start_time": "2025-05-03T07:24:23Z",
+        "end_time": "2025-05-30T13:00:28Z",
+        "velocity": 34.1,
+        "displacement": 5.0,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-09T11:32:51Z",
+        "end_time": "2025-05-28T04:03:02Z",
+        "velocity": 43.2,
+        "displacement": 25.5,
+        "visited_park": true,
+        "park_name": "Walden Ponds",
+        "trip_pings": [
+          {
+            "utc_timestamp": "2025-05-15T14:28:51Z",
+            "latitude": 40.04619871691762,
+            "longitude": -105.19219398941199,
+            "velocity": 16.0
+          },
+          {
+            "utc_timestamp": "2025-05-18T09:33:12Z",
+            "latitude": 40.04551837841943,
+            "longitude": -105.18930893901161,
+            "velocity": 10.0
+          }
+        ]
+      }
+    ],
+    "movement_pings": [
+      {
+        "utc_timestamp": "2025-05-20T16:33:25Z",
+        "latitude": 39.089739,
+        "longitude": -104.824989
+      },
+      {
+        "utc_timestamp": "2025-05-12T00:30:48Z",
+        "latitude": 40.01412,
+        "longitude": -105.176327
+      },
+      {
+        "utc_timestamp": "2025-05-14T11:11:57Z",
+        "latitude": 39.984151,
+        "longitude": -104.809732
+      },
+      {
+        "utc_timestamp": "2025-05-18T19:56:49Z",
+        "latitude": 39.176094,
+        "longitude": -105.018235
+      },
+      {
+        "utc_timestamp": "2025-05-27T11:35:58Z",
+        "latitude": 38.967971,
+        "longitude": -104.870752
+      },
+      {
+        "utc_timestamp": "2025-05-15T01:14:45Z",
+        "latitude": 39.96227,
+        "longitude": -105.126049
+      },
+      {
+        "utc_timestamp": "2025-05-23T18:04:38Z",
+        "latitude": 39.871673,
+        "longitude": -104.824591
+      },
+      {
+        "utc_timestamp": "2025-05-23T17:17:05Z",
+        "latitude": 38.954303,
+        "longitude": -105.203898
+      },
+      {
+        "utc_timestamp": "2025-05-20T13:51:29Z",
+        "latitude": 40.061742,
+        "longitude": -105.100671
+      },
+      {
+        "utc_timestamp": "2025-05-22T22:00:15Z",
+        "latitude": 38.916899,
+        "longitude": -105.197095
+      },
+      {
+        "utc_timestamp": "2025-05-13T10:57:57Z",
+        "latitude": 39.276315,
+        "longitude": -105.059062
+      },
+      {
+        "utc_timestamp": "2025-05-19T19:41:54Z",
+        "latitude": 39.911941,
+        "longitude": -105.264062
+      },
+      {
+        "utc_timestamp": "2025-05-08T13:38:02Z",
+        "latitude": 39.559417,
+        "longitude": -104.992737
+      },
+      {
+        "utc_timestamp": "2025-05-25T04:28:23Z",
+        "latitude": 39.166191,
+        "longitude": -105.111694
+      },
+      {
+        "utc_timestamp": "2025-05-16T18:09:09Z",
+        "latitude": 39.70596,
+        "longitude": -104.856325
+      },
+      {
+        "utc_timestamp": "2025-05-10T21:37:51Z",
+        "latitude": 38.813244,
+        "longitude": -105.264741
+      },
+      {
+        "utc_timestamp": "2025-05-15T21:16:39Z",
+        "latitude": 39.663516,
+        "longitude": -105.212521
+      },
+      {
+        "utc_timestamp": "2025-05-02T11:27:02Z",
+        "latitude": 39.406227,
+        "longitude": -104.878154
+      },
+      {
+        "utc_timestamp": "2025-05-06T23:54:12Z",
+        "latitude": 39.790614,
+        "longitude": -105.065295
+      }
+    ],
+    "home_location": {
+      "latitude": 40.040922,
+      "longitude": -105.113741
+    }
+  },
+  {
+    "ad_id": "user_005",
+    "home": {
+      "geohash_5": "dd905",
+      "zipcode": "80986",
+      "region": "Colorado",
+      "city": "Colorado Springs"
+    },
+    "work": {
+      "geohash_5": "fce53",
+      "zipcode": "80570",
+      "region": "Colorado",
+      "city": "Colorado Springs"
+    },
+    "trips": [
+      {
+        "start_time": "2025-05-09T21:51:24Z",
+        "end_time": "2025-05-29T22:53:19Z",
+        "velocity": 38.4,
+        "displacement": 10.1,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-01T00:19:00Z",
+        "end_time": "2025-05-28T00:15:05Z",
+        "velocity": 43.9,
+        "displacement": 11.2,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-07T03:13:34Z",
+        "end_time": "2025-05-16T01:16:41Z",
+        "velocity": 35.6,
+        "displacement": 21.0,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-02T17:37:44Z",
+        "end_time": "2025-05-16T06:06:43Z",
+        "velocity": 56.0,
+        "displacement": 23.2,
+        "visited_park": true,
+        "park_name": "Betasso Preserve",
+        "trip_pings": [
+          {
+            "utc_timestamp": "2025-05-10T17:57:33Z",
+            "latitude": 40.00582197606876,
+            "longitude": -105.33871074456233,
+            "velocity": 21.5
+          },
+          {
+            "utc_timestamp": "2025-05-20T06:15:33Z",
+            "latitude": 40.005470244848865,
+            "longitude": -105.33826868498494,
+            "velocity": 16.4
+          },
+          {
+            "utc_timestamp": "2025-05-14T23:26:48Z",
+            "latitude": 40.004061088269054,
+            "longitude": -105.3373768786275,
+            "velocity": 16.0
+          },
+          {
+            "utc_timestamp": "2025-05-17T06:26:23Z",
+            "latitude": 40.004957852935156,
+            "longitude": -105.33764725435854,
+            "velocity": 23.4
+          }
+        ]
+      }
+    ],
+    "movement_pings": [
+      {
+        "utc_timestamp": "2025-05-18T21:01:53Z",
+        "latitude": 38.845077,
+        "longitude": -104.833007
+      },
+      {
+        "utc_timestamp": "2025-05-24T19:36:57Z",
+        "latitude": 39.49059,
+        "longitude": -104.851848
+      },
+      {
+        "utc_timestamp": "2025-05-01T02:50:06Z",
+        "latitude": 39.297138,
+        "longitude": -105.053006
+      },
+      {
+        "utc_timestamp": "2025-05-02T16:50:12Z",
+        "latitude": 39.311289,
+        "longitude": -104.978282
+      },
+      {
+        "utc_timestamp": "2025-05-06T09:50:20Z",
+        "latitude": 39.295227,
+        "longitude": -105.199626
+      },
+      {
+        "utc_timestamp": "2025-05-30T00:58:37Z",
+        "latitude": 39.491493,
+        "longitude": -104.841257
+      },
+      {
+        "utc_timestamp": "2025-05-16T22:05:41Z",
+        "latitude": 39.481761,
+        "longitude": -105.293191
+      },
+      {
+        "utc_timestamp": "2025-05-01T07:19:03Z",
+        "latitude": 39.770479,
+        "longitude": -105.156007
+      },
+      {
+        "utc_timestamp": "2025-05-29T01:07:39Z",
+        "latitude": 40.086202,
+        "longitude": -105.171647
+      },
+      {
+        "utc_timestamp": "2025-05-04T17:47:46Z",
+        "latitude": 39.392135,
+        "longitude": -105.153597
+      },
+      {
+        "utc_timestamp": "2025-05-08T00:22:29Z",
+        "latitude": 39.93432,
+        "longitude": -105.190476
+      },
+      {
+        "utc_timestamp": "2025-05-17T08:10:58Z",
+        "latitude": 39.701514,
+        "longitude": -104.979915
+      }
+    ],
+    "home_location": {
+      "latitude": 39.949349,
+      "longitude": -105.186004
+    }
+  },
+  {
+    "ad_id": "user_006",
+    "home": {
+      "geohash_5": "ffbb5",
+      "zipcode": "80855",
+      "region": "Colorado",
+      "city": "Longmont"
+    },
+    "work": {
+      "geohash_5": "8f2be",
+      "zipcode": "80040",
+      "region": "Colorado",
+      "city": "Colorado Springs"
+    },
+    "trips": [
+      {
+        "start_time": "2025-05-07T02:43:26Z",
+        "end_time": "2025-05-13T23:55:03Z",
+        "velocity": 37.3,
+        "displacement": 22.7,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-15T23:07:17Z",
+        "end_time": "2025-05-18T04:11:23Z",
+        "velocity": 59.8,
+        "displacement": 11.7,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-19T04:01:43Z",
+        "end_time": "2025-05-22T06:53:29Z",
+        "velocity": 23.3,
+        "displacement": 15.7,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-13T15:04:47Z",
+        "end_time": "2025-05-21T18:58:31Z",
+        "velocity": 21.7,
+        "displacement": 28.5,
+        "visited_park": false
+      }
+    ],
+    "movement_pings": [
+      {
+        "utc_timestamp": "2025-05-27T11:56:26Z",
+        "latitude": 39.866245,
+        "longitude": -104.885226
+      },
+      {
+        "utc_timestamp": "2025-05-15T13:27:50Z",
+        "latitude": 39.680813,
+        "longitude": -105.057798
+      },
+      {
+        "utc_timestamp": "2025-05-18T07:35:33Z",
+        "latitude": 39.940075,
+        "longitude": -105.057931
+      },
+      {
+        "utc_timestamp": "2025-05-07T08:04:42Z",
+        "latitude": 39.814634,
+        "longitude": -105.00431
+      },
+      {
+        "utc_timestamp": "2025-05-08T19:54:19Z",
+        "latitude": 40.025394,
+        "longitude": -104.926675
+      },
+      {
+        "utc_timestamp": "2025-05-18T12:32:27Z",
+        "latitude": 38.972261,
+        "longitude": -104.969247
+      },
+      {
+        "utc_timestamp": "2025-05-07T06:42:09Z",
+        "latitude": 39.904656,
+        "longitude": -105.021662
+      },
+      {
+        "utc_timestamp": "2025-05-09T02:18:32Z",
+        "latitude": 39.164915,
+        "longitude": -104.943795
+      },
+      {
+        "utc_timestamp": "2025-05-02T12:39:31Z",
+        "latitude": 39.940252,
+        "longitude": -105.011538
+      },
+      {
+        "utc_timestamp": "2025-05-14T10:34:22Z",
+        "latitude": 39.973507,
+        "longitude": -105.164435
+      },
+      {
+        "utc_timestamp": "2025-05-01T02:40:11Z",
+        "latitude": 39.882961,
+        "longitude": -105.097104
+      },
+      {
+        "utc_timestamp": "2025-05-21T05:56:40Z",
+        "latitude": 38.932178,
+        "longitude": -105.131738
+      },
+      {
+        "utc_timestamp": "2025-05-17T16:47:25Z",
+        "latitude": 38.940688,
+        "longitude": -104.801979
+      },
+      {
+        "utc_timestamp": "2025-05-27T21:51:27Z",
+        "latitude": 38.960626,
+        "longitude": -105.242185
+      },
+      {
+        "utc_timestamp": "2025-05-14T07:51:01Z",
+        "latitude": 39.150253,
+        "longitude": -105.10643
+      },
+      {
+        "utc_timestamp": "2025-05-12T13:02:36Z",
+        "latitude": 39.582505,
+        "longitude": -105.027188
+      },
+      {
+        "utc_timestamp": "2025-05-26T15:56:33Z",
+        "latitude": 38.86766,
+        "longitude": -105.152943
+      }
+    ],
+    "home_location": {
+      "latitude": 40.133367,
+      "longitude": -105.272276
+    }
+  },
+  {
+    "ad_id": "user_007",
+    "home": {
+      "geohash_5": "894db",
+      "zipcode": "80909",
+      "region": "Colorado",
+      "city": "Longmont"
+    },
+    "work": {
+      "geohash_5": "b625d",
+      "zipcode": "80030",
+      "region": "Colorado",
+      "city": "Colorado Springs"
+    },
+    "trips": [
+      {
+        "start_time": "2025-05-10T20:02:02Z",
+        "end_time": "2025-05-12T01:01:08Z",
+        "velocity": 23.1,
+        "displacement": 18.5,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-01T08:12:59Z",
+        "end_time": "2025-05-06T18:12:31Z",
+        "velocity": 48.0,
+        "displacement": 28.3,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-20T05:49:09Z",
+        "end_time": "2025-05-29T08:55:51Z",
+        "velocity": 41.9,
+        "displacement": 20.1,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-11T07:27:16Z",
+        "end_time": "2025-05-22T05:59:10Z",
+        "velocity": 40.3,
+        "displacement": 23.6,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-02T17:15:49Z",
+        "end_time": "2025-05-08T10:39:04Z",
+        "velocity": 36.8,
+        "displacement": 15.3,
+        "visited_park": false
+      }
+    ],
+    "movement_pings": [
+      {
+        "utc_timestamp": "2025-05-30T17:55:11Z",
+        "latitude": 39.997527,
+        "longitude": -105.252959
+      },
+      {
+        "utc_timestamp": "2025-05-25T07:06:37Z",
+        "latitude": 40.042466,
+        "longitude": -104.937999
+      },
+      {
+        "utc_timestamp": "2025-05-02T15:09:58Z",
+        "latitude": 39.088282,
+        "longitude": -104.821193
+      },
+      {
+        "utc_timestamp": "2025-05-12T08:28:21Z",
+        "latitude": 38.967266,
+        "longitude": -104.990482
+      },
+      {
+        "utc_timestamp": "2025-05-08T15:21:52Z",
+        "latitude": 40.035222,
+        "longitude": -105.010447
+      },
+      {
+        "utc_timestamp": "2025-05-22T16:26:39Z",
+        "latitude": 38.952711,
+        "longitude": -105.258263
+      },
+      {
+        "utc_timestamp": "2025-05-18T14:17:28Z",
+        "latitude": 39.953954,
+        "longitude": -104.891916
+      },
+      {
+        "utc_timestamp": "2025-05-29T08:31:59Z",
+        "latitude": 39.977019,
+        "longitude": -105.012212
+      },
+      {
+        "utc_timestamp": "2025-05-17T17:09:22Z",
+        "latitude": 40.156876,
+        "longitude": -104.954994
+      },
+      {
+        "utc_timestamp": "2025-05-23T09:48:31Z",
+        "latitude": 39.822017,
+        "longitude": -105.136488
+      },
+      {
+        "utc_timestamp": "2025-05-13T12:36:46Z",
+        "latitude": 38.886259,
+        "longitude": -105.227176
+      },
+      {
+        "utc_timestamp": "2025-05-06T11:02:46Z",
+        "latitude": 40.144506,
+        "longitude": -105.08329
+      },
+      {
+        "utc_timestamp": "2025-05-21T07:10:32Z",
+        "latitude": 39.911098,
+        "longitude": -104.88062
+      },
+      {
+        "utc_timestamp": "2025-05-24T05:45:23Z",
+        "latitude": 39.398861,
+        "longitude": -105.228607
+      },
+      {
+        "utc_timestamp": "2025-05-28T19:12:20Z",
+        "latitude": 39.894632,
+        "longitude": -105.190287
+      },
+      {
+        "utc_timestamp": "2025-05-14T12:13:02Z",
+        "latitude": 39.134964,
+        "longitude": -105.109314
+      },
+      {
+        "utc_timestamp": "2025-05-06T08:33:13Z",
+        "latitude": 39.152304,
+        "longitude": -104.925985
+      }
+    ],
+    "home_location": {
+      "latitude": 40.041542,
+      "longitude": -105.486894
+    }
+  },
+  {
+    "ad_id": "user_008",
+    "home": {
+      "geohash_5": "35493",
+      "zipcode": "80073",
+      "region": "Colorado",
+      "city": "Golden"
+    },
+    "work": {
+      "geohash_5": "9de6c",
+      "zipcode": "80281",
+      "region": "Colorado",
+      "city": "Colorado Springs"
+    },
+    "trips": [
+      {
+        "start_time": "2025-05-05T21:07:01Z",
+        "end_time": "2025-05-07T00:53:28Z",
+        "velocity": 56.5,
+        "displacement": 14.7,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-02T20:13:41Z",
+        "end_time": "2025-05-23T00:36:24Z",
+        "velocity": 43.8,
+        "displacement": 19.0,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-06T19:07:37Z",
+        "end_time": "2025-05-20T14:12:29Z",
+        "velocity": 34.2,
+        "displacement": 9.3,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-10T03:39:21Z",
+        "end_time": "2025-05-17T12:13:31Z",
+        "velocity": 45.6,
+        "displacement": 11.5,
+        "visited_park": false
+      }
+    ],
+    "movement_pings": [
+      {
+        "utc_timestamp": "2025-05-03T02:07:12Z",
+        "latitude": 39.952717,
+        "longitude": -105.03474
+      },
+      {
+        "utc_timestamp": "2025-05-04T01:58:57Z",
+        "latitude": 38.854403,
+        "longitude": -105.229965
+      },
+      {
+        "utc_timestamp": "2025-05-21T23:52:23Z",
+        "latitude": 38.806411,
+        "longitude": -105.198406
+      },
+      {
+        "utc_timestamp": "2025-05-21T03:53:03Z",
+        "latitude": 40.061052,
+        "longitude": -104.862249
+      },
+      {
+        "utc_timestamp": "2025-05-03T13:29:42Z",
+        "latitude": 39.304011,
+        "longitude": -104.862654
+      },
+      {
+        "utc_timestamp": "2025-05-10T14:15:12Z",
+        "latitude": 39.667627,
+        "longitude": -105.089525
+      },
+      {
+        "utc_timestamp": "2025-05-30T18:50:39Z",
+        "latitude": 39.521383,
+        "longitude": -104.877832
+      },
+      {
+        "utc_timestamp": "2025-05-18T21:06:17Z",
+        "latitude": 39.172181,
+        "longitude": -105.247822
+      },
+      {
+        "utc_timestamp": "2025-05-08T06:14:56Z",
+        "latitude": 39.985383,
+        "longitude": -105.210513
+      },
+      {
+        "utc_timestamp": "2025-05-18T15:29:59Z",
+        "latitude": 40.043795,
+        "longitude": -105.072553
+      },
+      {
+        "utc_timestamp": "2025-05-28T01:06:09Z",
+        "latitude": 39.538193,
+        "longitude": -104.868215
+      },
+      {
+        "utc_timestamp": "2025-05-05T20:23:54Z",
+        "latitude": 38.864863,
+        "longitude": -105.19336
+      },
+      {
+        "utc_timestamp": "2025-05-26T04:56:49Z",
+        "latitude": 39.465307,
+        "longitude": -105.161169
+      },
+      {
+        "utc_timestamp": "2025-05-26T20:55:12Z",
+        "latitude": 39.509256,
+        "longitude": -104.881598
+      },
+      {
+        "utc_timestamp": "2025-05-02T12:29:50Z",
+        "latitude": 38.820353,
+        "longitude": -104.980116
+      },
+      {
+        "utc_timestamp": "2025-05-05T14:24:58Z",
+        "latitude": 39.315932,
+        "longitude": -104.817051
+      },
+      {
+        "utc_timestamp": "2025-05-28T01:39:36Z",
+        "latitude": 39.442859,
+        "longitude": -105.109156
+      },
+      {
+        "utc_timestamp": "2025-05-19T19:21:39Z",
+        "latitude": 38.833777,
+        "longitude": -104.973267
+      }
+    ],
+    "home_location": {
+      "latitude": 40.044067,
+      "longitude": -105.409768
+    }
+  },
+  {
+    "ad_id": "user_009",
+    "home": {
+      "geohash_5": "923b0",
+      "zipcode": "80774",
+      "region": "Colorado",
+      "city": "Longmont"
+    },
+    "work": {
+      "geohash_5": "c6bd1",
+      "zipcode": "80526",
+      "region": "Colorado",
+      "city": "Colorado Springs"
+    },
+    "trips": [
+      {
+        "start_time": "2025-05-11T01:20:44Z",
+        "end_time": "2025-05-11T03:48:04Z",
+        "velocity": 49.6,
+        "displacement": 16.4,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-13T01:48:42Z",
+        "end_time": "2025-05-14T03:58:31Z",
+        "velocity": 27.6,
+        "displacement": 9.6,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-02T07:42:16Z",
+        "end_time": "2025-05-25T04:52:02Z",
+        "velocity": 45.1,
+        "displacement": 14.1,
+        "visited_park": false
+      }
+    ],
+    "movement_pings": [
+      {
+        "utc_timestamp": "2025-05-25T09:00:35Z",
+        "latitude": 38.937292,
+        "longitude": -104.840425
+      },
+      {
+        "utc_timestamp": "2025-05-26T18:48:32Z",
+        "latitude": 39.605245,
+        "longitude": -105.02498
+      },
+      {
+        "utc_timestamp": "2025-05-04T11:47:15Z",
+        "latitude": 38.847864,
+        "longitude": -104.917146
+      },
+      {
+        "utc_timestamp": "2025-05-23T09:06:26Z",
+        "latitude": 39.086757,
+        "longitude": -105.190105
+      },
+      {
+        "utc_timestamp": "2025-05-02T20:21:58Z",
+        "latitude": 39.725048,
+        "longitude": -104.926505
+      },
+      {
+        "utc_timestamp": "2025-05-23T04:18:18Z",
+        "latitude": 39.804075,
+        "longitude": -105.102077
+      },
+      {
+        "utc_timestamp": "2025-05-18T15:55:16Z",
+        "latitude": 39.621814,
+        "longitude": -105.203677
+      },
+      {
+        "utc_timestamp": "2025-05-18T17:43:12Z",
+        "latitude": 39.863597,
+        "longitude": -104.946895
+      },
+      {
+        "utc_timestamp": "2025-05-14T15:15:32Z",
+        "latitude": 40.138477,
+        "longitude": -104.851881
+      },
+      {
+        "utc_timestamp": "2025-05-08T07:02:59Z",
+        "latitude": 39.239741,
+        "longitude": -104.924494
+      },
+      {
+        "utc_timestamp": "2025-05-05T07:49:30Z",
+        "latitude": 39.967214,
+        "longitude": -104.935493
+      },
+      {
+        "utc_timestamp": "2025-05-11T06:29:26Z",
+        "latitude": 39.174148,
+        "longitude": -104.838723
+      },
+      {
+        "utc_timestamp": "2025-05-06T15:43:49Z",
+        "latitude": 39.645246,
+        "longitude": -104.935529
+      },
+      {
+        "utc_timestamp": "2025-05-17T06:18:09Z",
+        "latitude": 39.804324,
+        "longitude": -104.856453
+      }
+    ],
+    "home_location": {
+      "latitude": 40.095171,
+      "longitude": -105.439049
+    }
+  },
+  {
+    "ad_id": "user_010",
+    "home": {
+      "geohash_5": "5fb36",
+      "zipcode": "80593",
+      "region": "Colorado",
+      "city": "Longmont"
+    },
+    "work": {
+      "geohash_5": "9b7ec",
+      "zipcode": "80867",
+      "region": "Colorado",
+      "city": "Colorado Springs"
+    },
+    "trips": [
+      {
+        "start_time": "2025-05-06T12:37:26Z",
+        "end_time": "2025-05-18T10:33:55Z",
+        "velocity": 22.4,
+        "displacement": 29.3,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-14T22:17:04Z",
+        "end_time": "2025-05-24T07:25:28Z",
+        "velocity": 33.1,
+        "displacement": 12.3,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-24T18:15:40Z",
+        "end_time": "2025-05-27T13:55:46Z",
+        "velocity": 35.6,
+        "displacement": 21.8,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-14T00:22:14Z",
+        "end_time": "2025-05-18T10:32:37Z",
+        "velocity": 42.8,
+        "displacement": 19.3,
+        "visited_park": false
+      },
+      {
+        "start_time": "2025-05-06T17:58:01Z",
+        "end_time": "2025-05-25T22:19:16Z",
+        "velocity": 30.8,
+        "displacement": 5.6,
+        "visited_park": false
+      }
+    ],
+    "movement_pings": [
+      {
+        "utc_timestamp": "2025-05-12T13:13:52Z",
+        "latitude": 39.680149,
+        "longitude": -105.161904
+      },
+      {
+        "utc_timestamp": "2025-05-03T01:32:50Z",
+        "latitude": 39.538399,
+        "longitude": -104.951045
+      },
+      {
+        "utc_timestamp": "2025-05-02T08:36:33Z",
+        "latitude": 38.928888,
+        "longitude": -104.83896
+      },
+      {
+        "utc_timestamp": "2025-05-24T16:59:17Z",
+        "latitude": 39.619853,
+        "longitude": -104.803135
+      },
+      {
+        "utc_timestamp": "2025-05-12T20:12:34Z",
+        "latitude": 39.121753,
+        "longitude": -104.909486
+      },
+      {
+        "utc_timestamp": "2025-05-12T21:58:31Z",
+        "latitude": 40.159357,
+        "longitude": -104.983476
+      },
+      {
+        "utc_timestamp": "2025-05-03T02:24:23Z",
+        "latitude": 39.219584,
+        "longitude": -105.259235
+      },
+      {
+        "utc_timestamp": "2025-05-19T22:49:26Z",
+        "latitude": 40.008109,
+        "longitude": -104.844255
+      },
+      {
+        "utc_timestamp": "2025-05-21T02:45:38Z",
+        "latitude": 38.894291,
+        "longitude": -105.192417
+      },
+      {
+        "utc_timestamp": "2025-05-23T02:53:03Z",
+        "latitude": 39.882619,
+        "longitude": -105.018818
+      },
+      {
+        "utc_timestamp": "2025-05-18T02:27:21Z",
+        "latitude": 39.782852,
+        "longitude": -104.99538
+      },
+      {
+        "utc_timestamp": "2025-05-11T14:33:48Z",
+        "latitude": 39.009464,
+        "longitude": -104.911766
+      },
+      {
+        "utc_timestamp": "2025-05-18T18:50:38Z",
+        "latitude": 39.243601,
+        "longitude": -104.99202
+      },
+      {
+        "utc_timestamp": "2025-05-04T16:13:02Z",
+        "latitude": 38.905175,
+        "longitude": -104.89992
+      },
+      {
+        "utc_timestamp": "2025-05-07T13:24:43Z",
+        "latitude": 39.584587,
+        "longitude": -104.865113
+      },
+      {
+        "utc_timestamp": "2025-05-04T04:28:26Z",
+        "latitude": 39.825743,
+        "longitude": -104.878201
+      }
+    ],
+    "home_location": {
+      "latitude": 40.102024,
+      "longitude": -105.11383
+    }
+  }
+]
