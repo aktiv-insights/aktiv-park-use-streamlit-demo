@@ -10,3 +10,4 @@ pydeck
 
 # App
 streamlit
+altair>=5.0

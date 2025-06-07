@@ -16,9 +16,18 @@
         "NumParkingSpots": 52, 
         "PicnicTables": true,
         "Shelter": true,
-        "OvernightCamping": false
+        "OvernightCamping": false,
+        "VisitStats": {
+            "Winter": 30680,
+            "Spring": 36086,
+            "Summer": 24575,
+            "Fall": 25598,
+            "Total_2024": 116939,
+            "Total_2023": 118252,
+            "Total_2022": 116769
+        }
     },
-     "56b4f7f3-1b68-442d-b26b-cc5f6b5593c7": {
+    "56b4f7f3-1b68-442d-b26b-cc5f6b5593c7": {
         "ParkName": "Caribou Ranch",
         "Acreage": 2151,
         "Contact": "https://www.bouldercounty.org/open-space/parks-and-trails/caribou-ranch/",
@@ -41,7 +50,16 @@
         "NumParkingSpots": 25, 
         "PicnicTables": true,
         "Shelter": false,
-        "OvernightCamping": false
+        "OvernightCamping": false,
+        "VisitStats": {
+            "Winter": 2789,
+            "Spring": 1292,
+            "Summer": 5539,
+            "Fall": 9359,
+            "Total_2024": 18979,
+            "Total_2023": 17824,
+            "Total_2022": 21794
+        }
     },
     "ba45a719-137c-4c04-9bb3-0ef91c0608aa": {
         "ParkName": "Betasso Preserve",
@@ -86,7 +104,16 @@
         "NumParkingSpots": 44, 
         "PicnicTables": true,
         "Shelter": true,
-        "OvernightCamping": false
+        "OvernightCamping": false,
+        "VisitStats": {
+            "Winter": 7411,
+            "Spring": 18092,
+            "Summer": 26094,
+            "Fall": 17019,
+            "Total_2024": 68616,
+            "Total_2023": 73800,
+            "Total_2022": 69213
+        }
     },
     "0eec7b46-3253-412c-8ec6-9292b01528fa": {
         "ParkName": "Heil Valley Ranch",
@@ -135,7 +162,16 @@
         "NumParkingSpots": 115, 
         "PicnicTables": true,
         "Shelter": true,
-        "OvernightCamping": false
+        "OvernightCamping": false,
+        "VisitStats": {
+            "Winter": 11308,
+            "Spring": 17126,
+            "Summer": 28736,
+            "Fall": 22528,
+            "Total_2024": 79698,
+            "Total_2023": 85467,
+            "Total_2022": 80674
+        }
     },
     "c26f24db-0092-4566-a440-caeee46e1ab7": {
         "ParkName": "Hall Ranch",
@@ -172,7 +208,15 @@
         "NumParkingSpots": 72, 
         "PicnicTables": true,
         "Shelter": true,
-        "OvernightCamping": false
+        "OvernightCamping": false,
+        "VisitStats": {
+            "Winter": 10148,
+            "Spring": 21149,
+            "Summer": 20072,
+            "Fall": 18924,
+            "Total_2024": 70293,
+            "Total_2023": 71859,
+            "Total_2022": 66356
+        }
     }
 }
- 

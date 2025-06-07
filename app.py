@@ -5,12 +5,14 @@ import geopandas as gpd
 import pandas as pd
 import json
 import pydeck as pdk
+import altair as alt
 from shapely.geometry import MultiPolygon
 from datetime import datetime
 
 # Paths
 TRIP_PINGS_GEOJSON_PATH = "assets/trip_pings.geojson"
 PARKS_GEOJSON_PATH = "assets/boulder_openspace_data.geojson"
+PARK_INFO_JSON_PATH = "assets/park_info.json"
 
 # Load trip pings
 @st.cache_data
@@ -26,14 +28,86 @@ def load_trip_pings():
 def load_parks():
     return gpd.read_file(PARKS_GEOJSON_PATH)
 
+# Load park metadata
+@st.cache_data
+def load_park_info():
+    with open(PARK_INFO_JSON_PATH, "r") as f:
+        park_info = json.load(f)
+    return park_info
+
 # ---- App ----
 
 st.set_page_config(layout="wide", page_title="Park Occupancy & Use Demo")
+
+st.markdown("""
+    <style>
+    div.block-container {
+    padding-top: 1rem !important;
+    }
+    section[data-testid="stSidebar"] > div:first-child {
+        padding-top: 0rem !important;
+    }
+    /* Sidebar labels → white */
+    section[data-testid="stSidebar"] label {
+        color: white !important;
+    }
+
+    /* Sidebar expander header → white */
+    section[data-testid="stSidebar"] .st-expanderHeader {
+        color: white !important;
+    }
+
+    /* Expander header headings → white */
+    section[data-testid="stSidebar"] .st-expanderHeader h1,
+    section[data-testid="stSidebar"] .st-expanderHeader h2,
+    section[data-testid="stSidebar"] .st-expanderHeader h3,
+    section[data-testid="stSidebar"] .st-expanderHeader h4,
+    section[data-testid="stSidebar"] .st-expanderHeader h5,
+    section[data-testid="stSidebar"] .st-expanderHeader h6 {
+        color: white !important;
+    }
+
+    /* Sidebar expander content (Park Details) → white */
+    section[data-testid="stSidebar"] .stMarkdown {
+        color: white !important;
+    }
+
+    </style>
+""", unsafe_allow_html=True)
+
+
+
+
+
+
+# Sidebar logo with link
+# sidebar logo
+# Load image as base64
+import base64
+
+def get_base64_image(image_path):
+    with open(image_path, "rb") as img_file:
+        encoded = base64.b64encode(img_file.read()).decode()
+    return encoded
+
+img_base64 = get_base64_image("assets/aktiv_wordmark.png")
+
+# Sidebar logo with clickable link
+st.sidebar.markdown(
+    f"""
+    <a href="https://www.aktiv-insights.dev" target="_blank">
+        <img src="data:image/png;base64,{img_base64}" style="width: 100%; border-radius: 5px;" />
+    </a>
+    """,
+    unsafe_allow_html=True
+)
+
 st.title("🏞️ Park Occupancy and Use Demo")
 
 # Load data
 gdf = load_trip_pings()
 parks_gdf = load_parks()
+park_info = load_park_info()
 
 # Sidebar - Park selection
 available_parks = sorted(gdf["park_name"].dropna().unique())
@@ -45,12 +119,12 @@ selected_parks = st.sidebar.multiselect(
 )
 
 # Sidebar - Visitor type
-visitor_options = ["All", "Visitor", "Non-Visitor"]
-selected_visitor_type = st.sidebar.radio(
-    "Visitor Type:",
-    options=visitor_options,
-    index=0
-)
+# visitor_options = ["All", "Visitor", "Non-Visitor"]
+# selected_visitor_type = st.sidebar.radio(
+#     "Visitor Type:",
+#     options=visitor_options,
+#     index=0
+# )
 
 # Sidebar - Date range
 min_date = gdf["utc_timestamp"].min().date()
@@ -77,6 +151,7 @@ filtered_gdf = gdf[gdf["park_name"].isin(selected_parks)]
 filtered_parks_gdf = parks_gdf[parks_gdf["ParkGroupDescription"].isin(selected_parks)].copy()
 
 # Filter by visitor type
+selected_visitor_type = "Visitor"  # Default to Visitor for now
 if selected_visitor_type == "Visitor":
     filtered_gdf = filtered_gdf[filtered_gdf["visited_park"] == True]
 elif selected_visitor_type == "Non-Visitor":
@@ -91,13 +166,11 @@ filtered_gdf = filtered_gdf[
 
 # ---- Prepare parks polygons ----
 
-# # Clean geometries (buffer(0))
+# Clean geometries (buffer(0))
 # filtered_parks_gdf["geometry"] = filtered_parks_gdf["geometry"].buffer(0)
 
-# # Force all to MultiPolygon
-# filtered_parks_gdf["geometry"] = filtered_parks_gdf["geometry"].apply(
-#     lambda geom: MultiPolygon([geom]) if geom.geom_type == "Polygon" else geom
-# )
+# # Explode polygons
+# exploded_parks_gdf = filtered_parks_gdf.explode(index_parts=True).reset_index(drop=True)
 
 # ---- Apply Active Park Focus ----
 
@@ -110,19 +183,36 @@ else:
 
 # ---- Park Details Expander ----
 
-with st.sidebar.expander("ℹ️ Park Details", expanded=False):
+with st.sidebar.expander("ℹ️", expanded=False):
 
     if active_park != "All":
-        # Show info for the active park
+        # Get park row from GeoDataFrame
         park_row = filtered_parks_gdf[filtered_parks_gdf["ParkGroupDescription"] == active_park]
 
         if not park_row.empty:
             row = park_row.iloc[0]
-            st.markdown(f"**Park Name:** {row['ParkGroupDescription']}")
-            st.markdown(f"**Acreage:** {row.get('Acreage', 'Unknown')} acres")
-            st.markdown(f"**Contact:** [Link]({row.get('Contact', '#')})")
-            st.markdown(f"**GlobalID:** `{row.get('GlobalID', '')}`")
-            # You can add more fields here as needed!
+            global_id = row.get("GlobalID", "")
+
+            # Lookup in park_info
+            info = park_info.get(global_id, None)
+
+            if info:
+                st.markdown(f"**Park Name:** {info['ParkName']}")
+                st.markdown(f"**Acreage:** {info['Acreage']} acres")
+                st.markdown(f"**Contact:** [Link]({info['Contact']})")
+                st.markdown(f"**Allows Dogs:** {info['AllowsDogs']}")
+                st.markdown(f"**Activities:** {', '.join(info['Activities'])}")
+                st.markdown(f"**Restrooms:** {'Yes' if info['Restrooms'] else 'No'}")
+                st.markdown(f"**ADA Access:** {'Yes' if info['ADA_Access'] else 'No'}")
+                st.markdown(f"**Parking Spots:** {info['NumParkingSpots']}")
+
+                # Trails
+                st.markdown("**Trails:**")
+                for trail in info.get("Trails", []):
+                    st.markdown(f"- {trail['TrailName']} ({trail['TrailRating']}, {trail['MilesTrail']} mi)")
+
+            else:
+                st.warning("No rich info available for this park.")
         else:
             st.info("No data available for selected park.")
     else:
@@ -132,88 +222,154 @@ with st.sidebar.expander("ℹ️ Park Details", expanded=False):
 
 st.subheader("📍 Trip Pings + Park Polygons Map")
 
-# Park polygons layer
 polygon_layer = pdk.Layer(
     "GeoJsonLayer",
     data=json.loads(focus_parks_gdf.to_json()),
     stroked=True,
     filled=True,
-    get_fill_color=[120, 200, 120, 120],
-    get_line_color=[0, 100, 0, 200],
+    get_fill_color=[255, 187, 51, 180],  # bright gold
+    get_line_color=[255, 187, 51, 180],
     line_width_min_pixels=1,
     pickable=True
 )
 
-# Trip points layer
 points_layer = pdk.Layer(
     "ScatterplotLayer",
     data=focus_gdf,
     get_position=["lon", "lat"],
-    get_color="[255, 140, 0, 180]",
-    get_radius=50,
+    get_color="[20, 185, 255, 255]",
+    get_radius=10,
     pickable=True
 )
 
-# Initial view
 if not focus_gdf.empty:
     view_state = pdk.ViewState(
         latitude=focus_gdf["lat"].mean(),
         longitude=focus_gdf["lon"].mean(),
-        zoom=12 if active_park != "All" else 10,
+        zoom=14 if active_park != "All" else 10,
         pitch=0
     )
 else:
     view_state = pdk.ViewState(latitude=40.0, longitude=-105.3, zoom=9)
 
-# Render map
 st.pydeck_chart(pdk.Deck(
     initial_view_state=view_state,
     layers=[polygon_layer, points_layer],
-    map_style="mapbox://styles/mapbox/light-v9",
+    map_style="mapbox://styles/mapbox/satellite-streets-v12",
     tooltip={
         "html": "<b>Park:</b> {ParkGroupDescription}",
         "style": {"color": "black"}
     }
 ))
 
-# ---- Trip statistics table ----
+# ---- Split layout: tables on left, graphs on right ----
 
-st.subheader("📊 Trip Statistics Table")
+col1, col2 = st.columns([2, 1])  # left wider, right smaller
 
-trip_stats = (
-    focus_gdf
-    .groupby(["ad_id", "park_name", "visited_park"])
-    .agg(
-        num_pings=("utc_timestamp", "count"),
-        first_ping=("utc_timestamp", "min"),
-        last_ping=("utc_timestamp", "max")
+# ---- LEFT COLUMN: Tables ----
+
+with col1:
+    st.subheader("🏞️ Park Summary Table")
+
+    park_summary = (
+        focus_gdf
+        .groupby("park_name")
+        .agg(
+            num_visitors=("ad_id", "nunique"),
+            num_pings=("utc_timestamp", "count"),
+            first_ping=("utc_timestamp", "min"),
+            last_ping=("utc_timestamp", "max")
+        )
+        .reset_index()
+        .sort_values("num_visitors", ascending=False)
     )
-    .reset_index()
-)
+    park_summary["first_ping"] = park_summary["first_ping"].dt.strftime("%Y-%m-%d %H:%M")
+    park_summary["last_ping"] = park_summary["last_ping"].dt.strftime("%Y-%m-%d %H:%M")
+    st.dataframe(park_summary)
 
-st.dataframe(trip_stats)
+    st.subheader("📊 Trip Statistics Table")
 
-# ---- Park Summary Table ----
-
-st.subheader("🏞️ Park Summary Table")
-
-park_summary = (
-    focus_gdf
-    .groupby("park_name")
-    .agg(
-        num_visitors=("ad_id", "nunique"),
-        num_pings=("utc_timestamp", "count"),
-        first_ping=("utc_timestamp", "min"),
-        last_ping=("utc_timestamp", "max")
+    trip_stats = (
+        focus_gdf
+        .groupby(["ad_id", "park_name"])
+        .agg(
+            num_pings=("utc_timestamp", "count"),
+            first_ping=("utc_timestamp", "min"),
+            last_ping=("utc_timestamp", "max")
+        )
+        .reset_index()
     )
-    .reset_index()
-    .sort_values("num_visitors", ascending=False)
-)
+    trip_stats["first_ping"] = trip_stats["first_ping"].dt.strftime("%Y-%m-%d %H:%M")
+    trip_stats["last_ping"] = trip_stats["last_ping"].dt.strftime("%Y-%m-%d %H:%M")
 
-st.dataframe(park_summary)
+    st.dataframe(trip_stats)
+
+
+
+# ---- RIGHT COLUMN: Graphs ----
+
+with col2:
+# Seasonal Use — this is working
+    st.subheader("📈 Seasonal Use, 2024")
+
+    if active_park != "All" and "VisitStats" in info:
+        seasonal_df = pd.DataFrame({
+            "Season": ["Winter", "Spring", "Summer", "Fall"],
+            "Visits": [
+                info["VisitStats"]["Winter"],
+                info["VisitStats"]["Spring"],
+                info["VisitStats"]["Summer"],
+                info["VisitStats"]["Fall"]
+            ]
+        })
+
+        bar_chart = alt.Chart(seasonal_df).mark_bar(color="#FFBB33").encode(
+            x=alt.X("Season", sort=["Winter", "Spring", "Summer", "Fall"]),
+            y="Visits"
+        ).properties(width=250, height=200)
+
+        st.altair_chart(bar_chart, use_container_width=True)
+
+    else:
+        st.info("Select a park to view seasonal graph.")
+
+    # ---- NEW container ----
+
+    st.subheader("📈 Annual Use, YoY")
+
+    if active_park != "All" and "VisitStats" in info:
+        annual_df = pd.DataFrame({
+            "Year": [2022, 2023, 2024],  # integers           
+            "Visits": [
+                info["VisitStats"]["Total_2022"],
+                info["VisitStats"]["Total_2023"],
+                info["VisitStats"]["Total_2024"]
+            ]
+        })
+
+        print(annual_df)
+
+        line_chart = alt.Chart(annual_df).mark_line(point=True, color="#14B9FF").encode(
+            x=alt.X("Year:O", title="Year"),
+            y=alt.Y("Visits", title="Estimated Visits", scale=alt.Scale(zero=False))
+        ).properties(width=250, height=250)  # Force height a bit larger
+
+        st.altair_chart(line_chart, use_container_width=True)
+
+    else:
+        st.info("Select a park to view annual graph.")
 
 # ---- Footer ----
 st.markdown("---")
+
+with st.expander("📚 Sources & Notes"):
+    st.markdown("""
+    - This demo uses synthetic location/visitation data for demonstration purposes.
+    - Park geometries: Boulder County Open Space GIS
+    - Visit statistics: Publicly reported counter data (https://assets.bouldercounty.gov/wp-content/uploads/2025/04/annual-visitation-report-2024.pdf).
+    - Synthetic mobility traces generated by reprocessor script.
+    """)
+
 st.markdown(
-    "Demo App • Synthetic Data • Reprocessor Pipeline • Streamlit + Pydeck + GeoPandas"
+    "Demo App • Synthetic Data • Reprocessor Pipeline • Streamlit + Pydeck + GeoPandas + Altair"
 )
