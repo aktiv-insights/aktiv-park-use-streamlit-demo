@@ -72,6 +72,15 @@ st.markdown("""
         color: white !important;
     }
 
+    /* Brighten pydeck tooltip */
+    .deck-tooltip {
+        background-color: rgba(255, 255, 255, 0.9) !important;
+        color: black !important;
+        font-size: 13px;
+        border-radius: 4px;
+        padding: 6px 10px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    }
     </style>
 """, unsafe_allow_html=True)
 
@@ -137,6 +146,12 @@ selected_date_range = st.sidebar.date_input(
     max_value=max_date
 )
 
+if selected_date_range and len(selected_date_range) == 2 and all(selected_date_range):
+    start_date, end_date = selected_date_range
+else:
+    st.info("Please select both a start and end date.")
+    st.stop()
+
 # Sidebar - Active Park selector (focus + zoom)
 active_park = st.sidebar.selectbox(
     "Active Park (zoom + focus):",
@@ -173,6 +188,11 @@ filtered_gdf = filtered_gdf[
 # exploded_parks_gdf = filtered_parks_gdf.explode(index_parts=True).reset_index(drop=True)
 
 # ---- Apply Active Park Focus ----
+
+# # Capture polygon click and update active_park if clicked
+# clicked_park = st.session_state.get("clicked_park")
+# if "clicked_park" in st.session_state:
+#     active_park = st.session_state["clicked_park"]
 
 if active_park != "All":
     focus_parks_gdf = filtered_parks_gdf[filtered_parks_gdf["ParkGroupDescription"] == active_park]
@@ -227,11 +247,13 @@ polygon_layer = pdk.Layer(
     data=json.loads(focus_parks_gdf.to_json()),
     stroked=True,
     filled=True,
-    get_fill_color=[255, 187, 51, 180],  # bright gold
-    get_line_color=[255, 187, 51, 180],
+    get_fill_color=[255, 140, 0, 180],
+    get_line_color=[255, 140, 0, 180],
     line_width_min_pixels=1,
-    pickable=True
+    pickable=True,
+    auto_highlight=True
 )
+
 
 points_layer = pdk.Layer(
     "ScatterplotLayer",
@@ -257,7 +279,7 @@ st.pydeck_chart(pdk.Deck(
     layers=[polygon_layer, points_layer],
     map_style="mapbox://styles/mapbox/satellite-streets-v12",
     tooltip={
-        "html": "<b>Park:</b> {ParkGroupDescription}",
+        "html": "{ParkGroupDescription}",
         "style": {"color": "black"}
     }
 ))
